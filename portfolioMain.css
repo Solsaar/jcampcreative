@@ -1,0 +1,186 @@
+body {
+    font-family: 'Ariel', sans-serif; /* Apply custom font */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: black;
+    color: ghostwhite;
+}
+
+.namePlate {
+    padding-top: 20pt;
+    background-color: black
+    font-family: 'PinyonScript', sans-serif;
+    font-size: 24pt;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    color: ghostwhite;
+    text-align: center;
+}
+
+.namePlate h1 {
+    font-size: 1.5em;
+    white-space: pre-line;
+    margin: 5px 0 0;
+}
+
+.topnav {
+    display: flex;
+    background-color: black;
+    height: 100%; /* Height for the topnav bar */
+    justify-content: center;
+    overflow: visible;
+    padding: 15px 15px; /* Spacing around toolbar */
+}
+
+#portfolioToolbar a
+{
+    padding: 10pt;
+    color: ghostwhite;
+}
+
+#portfolioToolbar {
+    font-size: 21pt;
+    text-decoration: none; /* Remove underline */
+    color: ghostwhite;
+    border-bottom: 2px solid #ddd; /* Subtle border for definition */
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    align-items: center; /* Center items vertically */
+    transition: color 0.3s, transform 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+#portfolioToolbar a:hover {
+  color: #ghostwhite; 
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+.topnav a:link { 
+  text-decoration: none;
+} 
+.topnav a:visited { 
+  text-decoration: none;
+} 
+.topnav a:hover { 
+  text-decoration: none; 
+} 
+.topnav a:active { 
+  text-decoration: none; 
+}
+
+
+.links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden off-screen on the right */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+    z-index: 1; /* Appear on top */
+    transition: right 0.3s ease-in-out; /* Smooth slide from right */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    display: block;
+    transition: 0.3s;
+}
+
+.links h1{
+    font-family: 'PinyonScript', sans-serif;
+    justify-content: top;
+    white-space: pre-line;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 2px solid white;
+}
+
+.links a:hover {
+    color: #a83232;
+    transform: scale(1.1); /* Slight enlargement on hover */
+    background-color: black;
+}
+
+.hamburger {
+    background-color: black;
+    padding: 4pt;
+    padding-left: 5pt;
+    position: fixed; /* Keep the icon fixed at the top right */
+    right: 0;
+    top: 0;
+    z-index: 2; /* Make sure the icon stays above the overlay */
+    cursor: pointer;
+}
+
+.hamburger i 
+{
+    background-color: black;
+    font-size: 24px;
+    color: ghostwhite;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+    .overlay-text {
+         font-size: 2.65em !important;
+    }
+    .namePlate {
+        margins: 10%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .overlay-text {
+        font-size: 2.3em !important; /* Tweak for very small devices */
+    }
+}
+
+.intro {
+    font-family: 'Boston', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    align-content:center;
+    width: 75%;
+    flex: 1;
+    margin: 0 auto; /* Add some space around columns */
+    margin-bottom: 10%;
+}
+
+@media (max-width: 768px){
+    .intro {
+        margin-top: 10%;
+    }
+}
+
+.redText {
+    color: red;
+}
+
+footer {
+    background-color: black; 
+    color: ghostwhite;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid ghostwhite;
+}
+
+footer a {
+    color: ghostwhite;
+    text-decoration: none;
+    margin: 0 5px;
+}

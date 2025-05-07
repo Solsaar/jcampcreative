@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JCamp Creative</title>
+    <link rel="stylesheet" href="portfolioMain.css">
+    <script type = "text/javascript" src="portfolioScript.js"></script>
+</head>
+<body onload="handleDeviceSpecificCode()">
+    
+    <!-- NamePlateSection -->
+    <div class = "namePlate" id="nameplate">
+        <h1 class="redText">Welcome to JCampCreative!</h1>
+    </div>
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <!-- Navigation links (hidden by default) -->
+        <div class="links" id="myLinks">
+            <h1> Jonathan Camp</h1>
+            <a href = "index.html"> Home </a>
+            <a href = "audio.html"> Audio </a>
+            <a hred = "myJourney.html"> My-Journey </a>
+            <a href = "aboutMe.html"> About-Me </a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="hamburger" id="hamburger" onclick="hamburgerDrop()" style="display: none;">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!-- "Toolbar menu" / "Toolbar for nav links"-->
+        <nav id="portfolioToolbar" style="display: none;">
+            <a href = "index.html"> Home </a>
+            <a href = "audio.html"> Audio </a>
+            <a hred = "myJourney.html"> My-Journey </a>
+            <a href = "aboutMe.html"> About-Me </a>
+        </nav>
+    </div>
+    <div class="intro">
+        <H2 class="redText"> Hello! </H2>
+        <p> If you've found your way here on your own without my involvement, you're probably wondering...</p>
+        <H2 class="redText"> Where am I? </H2>
+        <p> You are within the creative portfolio of Jonathan Camp. This is my place to show off my work, document my creative journey, and share my thoughts of various topics of interest. 
+
+        Feel free to navigate around using the menu at the top to see what I'm about!
+        </p>
+        <H2 class="redText"> Thanks! </H2>
+    </div>
+    </body>
+    <footer>
+        <p> A website creation of Jonathan Camp & James Brechtel</p>
+    </footer>
+</html>
