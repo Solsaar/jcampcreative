@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>jcampcreative</title>
+        <link rel="stylesheet" href="portfolioMain.css">
+        <script type = "text/javascript" src="portfolioScript.js"></script>
+    </head>
+    <body onload="handleDeviceSpecificCode()">
+        
+        <!-- NamePlateSection -->
+        <div class = "namePlate" id="nameplate">
+            <h1 class="redText">Welcome to jcampcreative!</h1>
+        </div>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <div class="links" id="myLinks">
+                <h1> Jonathan Camp</h1>
+                <a href = "index.html"> Home </a>
+                <a href = "projects.html"> Projects </a>
+                <a href = "blog.html"> Blog </a>
+            </div>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="hamburger" id="hamburger" onclick="hamburgerDrop()" style="display: none;">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- "Toolbar menu" / "Toolbar for nav links"-->
+            <nav id="portfolioToolbar" style="display: none;">
+                <a href = "index.html"> Home </a>
+                <a href = "projects.html"> Projects </a>
+                <a href = "blog.html"> Blog </a>
+            </nav>
+        </div>
+
+        <div class="portfolio-headshot">
+            <div class="headshot-container">
+                <img src="images/headshot.jpg" alt="Your Name Headshot" class="headshot" />
+                <h1 class="name">Jonathan Camp</h1>
+                <p class="title">Audio Engineer • Artist • Creator</p>
+            </div>
+            <div class="details">
+                <H1 class="redText"> Who I am </H1>
+                <p> Hi! I'm Jonathan Camp! I'm an Sound Designer and Mix Engineer from Tucson, AZ. After completing my education at the Conservatory of the Recording Arts and Sciences in Tempe, AZ - I moved to Los Angeles and started working in post production audio.
+                </p>
+                <div class="resume-box">
+                    <h2>Resume</h2>
+                    <p><strong>Objective:</strong> To make some fuckin noise</p>
+
+                    <h3>Experience</h3>
+                    <ul>
+                      <li><strong>Stank Developer</strong> – XYZ Corp (2020-2024)
+                        <ul>
+                          <li>Farted a whole bunch in my office chair</li>
+                          <li>Collaborated stanky women.</li>
+                        </ul>
+                      </li>
+                      <li><strong>Intern</strong> – ABC Studio (2020)
+                        <ul>
+                          <li>Did some crazy intern shit.</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <h3>Education</h3>
+                    <p><strong>Audio Engineering Degree </strong> – Stank University, 2017–2021</p>
+
+                    <h3>Skills</h3>
+                    <p>Limga</p>
+                </div>
+            </div>    
+        </div>
+    </body>
+    <footer>
+        <p> A website creation of Jonathan Camp & James Brechtel</p>
+    </footer>
+</html>

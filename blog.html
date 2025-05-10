@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>jcampcreative</title>
+        <link rel="stylesheet" href="blog.css">
+        <script type = "text/javascript" src="portfolioScript.js"></script>
+    </head>
+    <body onload="handleDeviceSpecificCode()">
+        
+        <!-- NamePlateSection -->
+        <div class = "namePlate" id="nameplate">
+            <h1 class="redText" id = "mainTitle">Welcome to jcampcreative<span class = "cyanText">! </span> </h1>
+        </div>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <div class="links" id="myLinks">
+                <h1> Jonathan Camp</h1>
+                <a href = "index.html"> Home </a>
+                <a href = "projects.html"> Projects </a>
+                <a href = "blog.html"> Blog </a>
+            </div>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="hamburger" id="hamburger" onclick="hamburgerDrop()" style="display: none;">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- "Toolbar menu" / "Toolbar for nav links"-->
+            <nav id="portfolioToolbar" style="display: none;">
+                <a href = "index.html"> Home </a>
+                <a href = "projects.html"> Projects </a>
+                <a href = "blog.html"> Blog </a>
+            </nav>
+        </div>
+
+    <div class="container"> 
+        <main> 
+            <article> 
+                <h2 class = "redText">HTML</h2> 
+                <p class="post-meta"> 
+                    Published on December 11, 2023 by GeeksforGeeks 
+                </p> 
+                <p> 
+                    HTML stands for HyperText Markup Language. It is 
+                    used to design the web pages. With the help of HTML, 
+                    you can create a complete website structure. HTML 
+                    is the combination of <span class = "cyanText"> Hypertext </span> and Markup language. 
+                    Hypertext defines the link between the web pages 
+                    and markup language defines the text document within 
+                    the tag that define the structure of web pages. 
+                </p> 
+            </article> 
+        </main>  
+    </div> 
+
+    </body> 
+    <footer>
+        <p> A website creation of Jonathan Camp & James Brechtel</p>
+    </footer>
+</html>
